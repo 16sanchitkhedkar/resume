@@ -1,0 +1,274 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Sanchit Khedkar} \\ \vspace{3pt}
+    % 123 Street Name, Town, State 12345 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-9112476745 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{16sanchitkhedkar@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/sanchit-khedkar-64347b155/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/sanchit-khedkar-64347b155/}}  ~ \\
+    \href{https://github.com/16sanchitkhedkar}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/16sanchitkhedkar}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vellore Institute of Technology}{Expected Aug 2024}
+      % {Oct. 2020 -- Aug 2024}
+      {Bachelor of Technolgy in Information Technogy}{Vellore, Tamil Nadu}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-3pt, parsep=3pt]
+                \item\small Data Structures and Algorithms
+                \item Operating Systems
+                \item Computer Networks
+                \item Database Management
+                \item Artificial Intelligence
+                \item Machine Learning
+                \item Data Mining Techniques
+                \item Computer Architecture
+                \item Object Oriented Programming
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {LG Electronics India Pvt. Ltd.}{Jan 2024 -- Present}
+      {Software Engineer Intern}{Pune, Maharshtra}
+      \resumeItemListStart
+        \resumeItem{Developed an automated data collection system to streamline the aggregation of public domain information for market analysis, utilizing Python, and the BeautifulSoup, Pandas, and TKinter Libraries }
+        \resumeItem{Contributed to a 20\% increase in data analysis efficiency by automating repetitive data collection tasks, enabling the team to focus on higher-value analytical work}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+              {\textbf{\href{https://github.com/16sanchitkhedkar/Dataset-Augmentation-with-GANs}{Dataset Augmentation using GANs}} $|$ \emph{Python, PyTorch}}{January 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a Generative Adversarial Network to augment a dataset to avoid undersampling and oversampling}
+          %   \resumeItem{Implemented Selenium to create an instance of Chrome in order to interact with the correct elements of the web page.}
+          %   \resumeItem{Created a Linux virtual machine to run on Google Cloud so that the program is able to run everyday from the cloud.}
+          %   \resumeItem{Used Cron to schedule the program to execute automatically at 11 AM every morning so a reservation is made for me.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/16sanchitkhedkar/Classical-Quantum-KNN}{Classical-Quantum KNN Classifier}} $|$ \emph{Python, Qiskit}}{January 2024}
+          \resumeItemListStart
+            \resumeItem{Created a KNN Classifier using Quantum Circuits with the IBM Qiskit Framework and encoded Classical Data to Quantum data for simulation on aforementioned circuit and extracted k-Nearest Neighbours.}
+            % \resumeItem{Processed user inputted information in the back-end of the app to return a subtotal price based on the tickets selected.}
+            % \resumeItem{Utilized the layout editor to create a UI for the application in order to allow different scenes to interact with each other.}
+          \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\begin{refsection}[citations.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
+\vspace{-16pt}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C, C++, SQL, } \\
+     \textbf{Developer Tools}{: VS Code} \\
+     \textbf{Technologies/Frameworks}{: Linux, Selenium, GitHub} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{VIT MUN Society}{January 2021 -- January 2024 }{Chairperson, 2023}{Vellore Institute of Technology}
+            \resumeItemListStart
+                \resumeItem{Organising Committee member for the events Spotlight 2.0, Policython 2023, Novus Epoch attracting over a combined total of 1000 attendees, and managed logistics for the event}
+                \resumeItem{Developed and executed comprehensive PR and outreach campaigns to increase awareness on key social issues, reaching an audience of over 2000 people.}
+                \resumeItem{Recipient of the Best Club Award for the year 2022 in the category Arts and Cultural}
+            \resumeItemListEnd
+
+        \resumeSubheading{DBQC - The VIT Quiz Club}{January 2021 -- January 2024 }{Events Head, 2022}{Vellore Institute of Technology}
+            \resumeItemListStart
+                \resumeItem{Managed all aspects of The Grand Gravitas Quiz Fest 2022, The Riviera Quiz Fest 2023, and The Grand Gravitas Quiz Fest 2023, resulting in an attendance of over 500 participants}
+                \resumeItem{Planned and executed monthly Quiz of The Month events for the year 2022, attracting an average of 40 participants per event.}
+                \resumeItem{Increased engagement on the club’s Instagram page by introducing weekly facts and mini-quizzes, resulting in a 15\% increase in followers.}
+                \resumeItem{Planned and executed the 2022 edition of Summer of Quiz, a highly anticipated annual event on the club’s Instagram handle, featuring engaging and thought-provoking questions for 50 consecutive days, reaching an audience of over 2500 people.}
+                \resumeItem{Recipient of the Best Club Award for the year 2023 in the category Arts and Cultural}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+\end{document}
