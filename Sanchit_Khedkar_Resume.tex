@@ -1,4 +1,4 @@
-  %-------------------------
+%-------------------------
 % Resume in Latex
 % Author : Jake Gutierrez
 % Based off of: https://github.com/sb2nov/resume
@@ -18,10 +18,6 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{fontawesome5}
-\usepackage{multicol}
-\setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 
 
@@ -44,11 +40,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -58,7 +54,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
+  \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -72,16 +68,10 @@
   }
 }
 
-\newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
-  }
-}
-
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -95,47 +85,19 @@
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
-
-% job listing environments
-\newenvironment{jobshort}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    }
-    {
-    }
-
-\newenvironment{joblong}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
-    }
-    {
-    \end{itemize}
-    \end{minipage}    
-    }
-
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -150,12 +112,10 @@
 % \end{tabular*}
 
 \begin{center}
-    {\Huge \scshape Sanchit Khedkar} \\ \vspace{3pt}
-    % 123 Street Name, Town, State 12345 \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ +91-9112476745 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{16sanchitkhedkar@gmail.com}} ~ 
-    \href{https://www.linkedin.com/in/sanchit-khedkar-64347b155/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/sanchit-khedkar-64347b155/}}  ~ \\
-    \href{https://github.com/16sanchitkhedkar}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/16sanchitkhedkar}}
-    \vspace{-8pt}
+    \textbf{\Huge \scshape Sanchit Khedkar} \\ \vspace{1pt}
+    \small +91 9112476745 $|$ \href{mailto:16sanchitkhedkar@gmail.com.com}{\underline{16sanchitkhedkar@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/sanchit-khedkar-64347b155/}{\underline{linkedin.com/in/sanchit-khedkar-64347b155/}} $|$
+    \href{https://github.com/16sanchitkhedkar}{\underline{github.com/16sanchitkhedkar}}
 \end{center}
 
 
@@ -163,29 +123,12 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Vellore Institute of Technology}{Expected Aug 2024}
-      % {Oct. 2020 -- Aug 2024}
-      {Bachelor of Technolgy in Information Technogy}{Vellore, Tamil Nadu}
+      {B. Tech, Information Technology, Vellore Institute of Technology}{Expected August 2024}
+      {}{CGPA 7.82}
+    % \resumeSubheading
+      % {Blinn College}{Bryan, TX}
+      % {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
   \resumeSubHeadingListEnd
-
-%------RELEVANT COURSEWORK-------
-\section{Relevant Coursework}
-    %\resumeSubHeadingListStart
-        \begin{multicols}{4}
-            \begin{itemize}[itemsep=-3pt, parsep=3pt]
-                \item\small Data Structures and Algorithms
-                \item Operating Systems
-                \item Computer Networks
-                \item Database Management
-                \item Artificial Intelligence
-                \item Machine Learning
-                \item Data Mining Techniques
-                \item Computer Architecture
-                \item Object Oriented Programming
-            \end{itemize}
-        \end{multicols}
-        \vspace*{2.0\multicolsep}
-    %\resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
@@ -193,84 +136,122 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {LG Electronics India Pvt. Ltd.}{Jan 2024 -- Present}
-      {Software Engineer Intern}{Pune, Maharashtra}
+      {Software Engineer Intern, LG Electronics India}{January 2024 -- Present}
+      {}{}
+      \vspace{-0.70cm}
       \resumeItemListStart
-        \resumeItem{Developed a web application using Python Flask to automate data collection from 4 consumer appliance websites, increasing efficiency by 60\% and extracting detailed product information accurately.}
-        \resumeItem{Implemented advanced data cleaning methods using Pandas library into the web application to reduce error rates by 75\% and ensure reliable extraction of information for analysis.}
-        \resumeItem{Implemented Sentiment Analysis using Huggingface Transformers on the extracted data to understand customer feedback and satisfaction levels, providing insights to the marketing team for product improvement.}
-        \resumeItem{Collaborated with a cross-functional team to optimize the user interface of the web scraping tool, resulting in a 40\% increase in usability and adoption among internal stakeholders.}
+    \resumeItem{Designed and implemented Python scripts to scrape customer reviews from 10 different e-commerce websites, resulting in a dataset of over 10,000 reviews for analysis, contributing to a comprehensive NLP model.}
+    \resumeItem{Utilized machine learning algorithms to fine-tune a large language model (LLM) using the custom dataset, achieving a 35\% increase in accuracy of sentiment predictions for consumer electronics appliances.}
+    \resumeItem{Built a web application using Python Flask to enable users to interact with the fine-tuned LLM, enhancing user experience and accessibility. Deployed the web application using Docker and Nginx, ensuring scalability and efficient performance.}
+    \resumeItem{Collaborated with cross-functional teams to deliver cutting-edge AI solutions, demonstrating strong communication and collaborative skills.}
+    \resumeItem{Conducted thorough testing and debugging to identify and resolve issues, reducing error rates by 75\%, and ensured high-quality deliverables that meet user expectations.}
       \resumeItemListEnd
-    
+      
+% -----------Multiple Positions Heading-----------
+   % \resumeSubSubheading
+   %  {Software Engineer I}{Oct 2014 - Sep 2016}
+   %  \resumeItemListStart
+   %     \resumeItem{Apache Beam}
+   %       {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+   %  \resumeItemListEnd
+   % \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    % \resumeSubheading
+    %   {Information Technology Support Specialist}{Sep. 2018 -- Present}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Communicate with managers to set up campus computers used on campus}
+    %     \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+    %     \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    % \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+    %     \resumeItem{Developed a game in Java to test the generated dungeons}
+    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+    %   \resumeItemListEnd
+
   \resumeSubHeadingListEnd
-\vspace{-16pt}
+
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \vspace{-5pt}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-              {\textbf{\href{https://github.com/16sanchitkhedkar/Dataset-Augmentation-with-GANs}{Dataset Augmentation using GANs}} $|$ \emph{Python, PyTorch}}{January 2024}
+           {\textbf{\href{https://github.com/16sanchitkhedkar/Dataset-Augmentation-with-GANs}{Dataset Augmentation using GANs}} $|$ \emph{Python, Pytorch}}{December 2023 -- January 2024}
           \resumeItemListStart
-            \resumeItem{Developed a Generative Adversarial Network to augment a dataset to avoid undersampling and oversampling}
-          %   \resumeItem{Implemented Selenium to create an instance of Chrome in order to interact with the correct elements of the web page.}
-          %   \resumeItem{Created a Linux virtual machine to run on Google Cloud so that the program is able to run everyday from the cloud.}
-          %   \resumeItem{Used Cron to schedule the program to execute automatically at 11 AM every morning so a reservation is made for me.}
+          \resumeItem{Developed a PyTorch-based Generative Adversarial Network (GAN) from scratch to generate synthetic data for augmenting imbalanced datasets, addressing class imbalance issues without oversampling or undersampling}
+    \resumeItem{Implemented a generator network to produce realistic synthetic samples and a discriminator network to distinguish real from synthetic data, training the GAN using automatic differentiation to align the generated distribution with the real data distribution}
+    \resumeItem{Demonstrated improved classification model performance on the augmented dataset, mitigating the impact of class imbalance on accuracy, and utilized Matplotlib for visualizing generated data distributions and performance metrics}
           \resumeItemListEnd
-          \vspace{-13pt}
-          
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/16sanchitkhedkar/Classical-Quantum-KNN}{Classical-Quantum KNN Classifier}} $|$ \emph{Python, Qiskit}}{January 2024}
+          {\textbf{\href{https://github.com/16sanchitkhedkar/Classical-Quantum-KNN}{Classical-Quantum KNN Classifier}} $|$ \emph{Python, Qiskit}}{November 2023 -- January 2024}
           \resumeItemListStart
-            \resumeItem{Created a KNN Classifier using Quantum Circuits with the IBM Qiskit Framework and encoded Classical Data to Quantum data for simulation on aforementioned circuit and extracted k-Nearest Neighbours.}
-            % \resumeItem{Processed user inputted information in the back-end of the app to return a subtotal price based on the tickets selected.}
-            % \resumeItem{Utilized the layout editor to create a UI for the application in order to allow different scenes to interact with each other.}
-          \resumeItemListEnd 
-          
+            \resumeItem{Implemented a quantum algorithm using Qiskit, an open-source SDK by IBM Quantum, to perform k-nearest neighbor (KNN) classification, a supervised machine learning technique}
+            \resumeItem{Developed a quantum circuit to encode a dataset and executed the quantum KNN algorithm to classify samples based on their nearest neighbors}
+            \resumeItem{Simulated the quantum circuit using Qiskit's simulator framework and successfully extracted the k nearest neighbors from the simulation results}
+          \resumeItemListEnd
     \resumeSubHeadingListEnd
-\vspace{-15pt}
 
-%-----------PUBLICATIONS-----------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
-\vspace{-16pt}
+
 
 %
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Java, C, C++, SQL} \\
-     \textbf{Developer Tools}{: VS Code} \\
-     \textbf{Technologies/Frameworks}{: Linux, Selenium, Git} \\
+    %  \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+    %  \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+    %  \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+    %  \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    % }}
+     \textbf{Languages}{: Java, Python, C/C++, SQL, JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: Flask} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, Pytorch, Qiskit}
     }}
  \end{itemize}
- \vspace{-16pt}
 
-
-%-----------INVOLVEMENT---------------
-\section{Leadership / Extracurricular}
-    \resumeSubHeadingListStart
-        \resumeSubheading{VIT MUN Society}{January 2021 -- January 2024 }{Chairperson, 2023}{Vellore Institute of Technology}
-            \resumeItemListStart
-                \resumeItem{Organising Committee member for the events Spotlight 2.0, Policython 2023, Novus Epoch attracting over a combined total of 1000 attendees, and managed logistics for the event}
-                \resumeItem{Developed and executed comprehensive PR and outreach campaigns to increase awareness on key social issues, reaching an audience of over 2000 people.}
-                \resumeItem{Recipient of the Best Club Award for the year 2022 in the category Arts and Cultural}
-            \resumeItemListEnd
-
-        \resumeSubheading{DBQC - The VIT Quiz Club}{January 2021 -- January 2024 }{Events Head, 2022}{Vellore Institute of Technology}
-            \resumeItemListStart
-                \resumeItem{Managed all aspects of The Grand Gravitas Quiz Fest 2022, The Riviera Quiz Fest 2023, and The Grand Gravitas Quiz Fest 2023, resulting in an attendance of over 500 participants}
-                \resumeItem{Planned and executed monthly Quiz of The Month events for the year 2022, attracting an average of 40 participants per event.}
-                \resumeItem{Increased engagement on the club’s Instagram page by introducing weekly facts and mini-quizzes, resulting in a 15\% increase in followers.}
-                \resumeItem{Planned and executed the 2022 edition of Summer of Quiz, a highly anticipated annual event on the club’s Instagram handle, featuring engaging and thought-provoking questions for 50 consecutive days, reaching an audience of over 2500 people.}
-                \resumeItem{Recipient of the Best Club Award for the year 2023 in the category Arts and Cultural}
-            \resumeItemListEnd
-        
+%-----------Publications-----------
+\section{Publications}
+\resumeSubHeadingListStart
+      \resumeProjectHeading
+           {\textbf{\href{https://www.igi-global.com/chapter/mental-health-and-well-being-productsapps-and-their-challenges/322639}{Mental Health and Well-Being Products/Apps and Their Challenges}}}{}
+          \resumeItemListStart
+          \resumeItem{Sooradas, Saubhagya et al. (2023). “Mental Health and Well-Being Products/Apps and Their Challenges”. In:
+Community Mental Health and Well-Being in the New Normal. IGI Global, pp. 141–167.}
+          \resumeItemListEnd
+          % \resumeProjectHeading
+           % {\textbf{\href{https://link.springer.com/book/9789819729371}{Machine Learning for Intelligent Healthcare Across Decentralized Patient Databases using Federated Learning}}}{}
+          % \resumeItemListStart
+          % \resumeItem{Sooradas, Saubhagya et al. (2023). “Mental Health and Well-Being Products/Apps and Their Challenges”. In: Community Mental Health and Well-Being in the New Normal. IGI Global, pp. 141–167.}
+          % \resumeItemListEnd
     \resumeSubHeadingListEnd
 
+%-------------------------------------------
+
+%-----------Extracurricular Activities-----------
+\section{Leadership and Extracurricular Activities}
+\resumeSubHeadingListStart
+      \resumeProjectHeading
+           {\textbf{Chairperson} $|$ \emph{VIT Model United Nations Society}}{March 2023 -- January 2024}
+          % \resumeItemListStart
+          % \resumeItem{Developed a Generative Adversarial Network to augment a dataset to avoid undersampling and oversampling.}
+          % \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Events Head} $|$ \emph{DBQC - The VIT Quiz Club}}{January 2022 -- December 2023}
+          % \resumeItemListStart
+          %   \resumeItem{Created a KNN Classifier using Quantum Circuits with the IBM Qiskit Framework and encoded Classical Data to Quantum data for simulation on aforementioned circuit and extracted k-Nearest Neighbours.}
+          % \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 \end{document}
+
+%
