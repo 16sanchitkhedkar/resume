@@ -11,7 +11,7 @@ jobs:
       FILE: Sanchit_Khedkar_Resume
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@latest
+        uses: actions/checkout@v4
       - name: Sanchit_Khedkar_Resume
         uses: dante-ev/latex-action@latest
         with:
@@ -20,7 +20,7 @@ jobs:
       - name: move
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts/
       - name: Upload pdf as artifact
-        uses: actions/upload-artifact@latest
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ env.FILE }}.pdf
           path: ./github_artifacts
@@ -29,8 +29,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@latest
-      - uses: actions/download-artifact@latest
+        uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
         with:
           path: github_artifacts
       - name: move
@@ -47,11 +47,11 @@ jobs:
     needs: [deploy]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@latest
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Copy To Branches Action
-        uses: planetoftheweb/copy-to-branches@vlatest
+        uses: planetoftheweb/copy-to-branches@latest
         env:
           key: main
           files: index.html CNAME
