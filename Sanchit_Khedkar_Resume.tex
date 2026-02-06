@@ -1,257 +1,136 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
+\documentclass{resume} % Use the custom resume.cls style
 
-\documentclass[letterpaper,11pt]{article}
-
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
-
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Sanchit Khedkar} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{+1(857) 351-8583 \\ Boston, MA} 
+\address{\href{mailto:16sanchitkhedkar@gmail.com}{16sanchitkhedkar@gmail.com} \\ \href{https://www.linkedin.com/in/16sanchitkhedkar}{https://www.linkedin.com/in/16sanchitkhedkar} \\\href{ }{ }}  %
 
 \begin{document}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
 
-\begin{center}
-    \textbf{\Huge \scshape Sanchit Khedkar} \\ \vspace{1pt}
-    \small +91 9112476745 $|$ \href{mailto:16sanchitkhedkar@gmail.com.com}{\underline{16sanchitkhedkar@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/sanchit-khedkar-64347b155/}{\underline{linkedin.com/in/sanchit-khedkar-64347b155/}} $|$
-    \href{https://github.com/16sanchitkhedkar}{\underline{github.com/16sanchitkhedkar}}
-\end{center}
+% \begin{rSection}{OBJECTIVE}
+
+% {Software Engineer with 2+ years of experience in XXX, seeking full-time XXX roles.}
 
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {B. Tech, Information Technology, Vellore Institute of Technology}{Sept 2020 - Aug 2024}
-      {}{CGPA 7.91}
-    % \resumeSubheading
-      % {Blinn College}{Bryan, TX}
-      % {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
-  \resumeSubHeadingListEnd
+% \end{rSection}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Northeastern University}, Boston, MA \hfill {Sept. 2025 - Present}\\
+{\bf Khoury College of Computer Sciences} \hfill {Expected Graduation: Apr 2027} \\
+Candidate for Master of Science in Computer Science \hfill {GPA: 3.34/4.0} \\
+Relevant Coursework: Programming Design Paradigm, Database Management Systems, Computer Systems, \\Algorithms
+
+{\bf Vellore Institute of Technology}, Vellore, India \hfill {Sept 2020 - Jun 2024} \\
+Bachelor of Technology in Information Technology \hfill {GPA: 7.92/10} \\
+Relevant Coursework: Machine Learning, Artificial Intelligence, Data Mining Techniques
+% Minor in Linguistics \smallskip \\
+% Member of Eta Kappa Nu \\
+% Member of Upsilon Pi Epsilon \\
 
 
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
+\end{rSection}
 
-    \resumeSubheading
-      {Python Developer Intern, LG Electronics India}{January 2024 -- June 2024}
-      {}{}
-      \vspace{-0.70cm}
-      \resumeItemListStart
-    \resumeItem {Developed a web-based dashboard using Python Flask framework to visualize consumer electronics data from Indian e-commerce platforms.}
-\resumeItem {Implemented web scraping functionality using Python Beautiful Soup and Requests libraries to extract product details including model specifications, customer ratings, and user reviews.}
-\resumeItem {Engineered data collection and presentation system to aggregate and display comprehensive product information for consumer electronics market analysis.}
-\resumeItem{Collaborated with cross-functional teams to deliver cutting-edge solutions, demonstrating strong communication and collaborative skills.}
-\resumeItem{Conducted thorough testing and debugging to identify and resolve issues, reducing error rates by 75\%, and ensured high-quality deliverables that meet user expectations}
-      \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-   % \resumeSubSubheading
-   %  {Software Engineer I}{Oct 2014 - Sep 2016}
-   %  \resumeItemListStart
-   %     \resumeItem{Apache Beam}
-   %       {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-   %  \resumeItemListEnd
-   % \resumeSubHeadingListEnd
-%-------------------------------------------
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+\begin{rSection}{TECHNICAL KNOWLEDGE}
 
-    % \resumeSubheading
-    %   {Information Technology Support Specialist}{Sep. 2018 -- Present}
-    %   {Southwestern University}{Georgetown, TX}
-    %   \resumeItemListStart
-    %     \resumeItem{Communicate with managers to set up campus computers used on campus}
-    %     \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
-    %     \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
-    % \resumeItemListEnd
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Languages & Python, C, C++, SQL
+\\
+Frameworks and Tools & MySQL, Flask\\
+% XYZ & A, B, C, D\\
+\end{tabular}\\
+\end{rSection}
 
-    % \resumeSubheading
-    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-    %   {Southwestern University}{Georgetown, TX}
-    %   \resumeItemListStart
-    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-    %     \resumeItem{Developed a game in Java to test the generated dungeons}
-    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
-    %   \resumeItemListEnd
+% \vspace{-10pt}
 
-  \resumeSubHeadingListEnd
+\begin{rSection}{EXPERIENCE}
 
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-           {\textbf{\href{https://github.com/16sanchitkhedkar/Dataset-Augmentation-with-GANs}{Dataset Augmentation using GANs}} $|$ \emph{Python, Pytorch}}{December 2023 -- January 2024}
-          \resumeItemListStart
-          \resumeItem{Developed a PyTorch-based Generative Adversarial Network (GAN) from scratch, implementing a generator to produce realistic synthetic samples and a discriminator to distinguish real from synthetic data, training the GAN to align the generated and real data distributions.}
-        \resumeItem{Demonstrated improved classification model performance on the GAN-augmented imbalanced dataset, mitigating class imbalance impact on accuracy, and utilized Matplotlib to visualize generated data distributions and performance metrics.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{\href{https://github.com/16sanchitkhedkar/Classical-Quantum-KNN}{Classical-Quantum KNN Classifier}} $|$ \emph{Python, Qiskit}}{November 2023 -- January 2024}
-          \resumeItemListStart
-            \resumeItem{Implemented a quantum KNN classification algorithm using the Qiskit SDK, by developing a quantum circuit to encode a dataset and executing the quantum KNN algorithm to classify samples based on their nearest neighbors.}
-            \resumeItem{Simulated the quantum circuit using Qiskit's simulator framework, successfully extracting the k nearest neighbors from the simulation results to demonstrate the quantum algorithm's capability in performing the supervised machine learning technique.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-    %  \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
-    %  \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-    %  \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
-    %  \textbf{Libraries}{: pandas, NumPy, Matplotlib}
-    % }}
-     \textbf{Languages}{: Java, Python, C/C++, SQL, JavaScript, HTML/CSS, R} \\
-     \textbf{Frameworks}{: Flask} \\
-     \textbf{Developer Tools}{: Git, Docker, VS Code} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib, Pytorch, Qiskit}
-    }}
+\textbf{Python Developer Intern} \hfill Jan 2024 - Jul 2024\\
+LG Electronics India \hfill \textit{Pune, India}
+ \begin{itemize}
+    \itemsep -3pt {} 
+     \item Developed a web-based dashboard using Python Flask framework to visualize consumer electronics data from
+Indian e-commerce platforms.
+     \item  Implemented web scraping functionality using Python Beautiful Soup and Requests libraries to extract product
+details including model specifications, customer ratings, and user reviews.
+    \item Engineered data collection and presentation system to aggregate and display comprehensive product information
+for consumer electronics market analysis.
+    \item Collaborated with cross-functional teams to deliver cutting-edge solutions, demonstrating strong communication
+and collaborative skills.
+    \item Conducted thorough testing and debugging to identify and resolve issues, reducing error rates by 75%, and
+ensured high-quality deliverables that meet user expectations
  \end{itemize}
+ 
+% \textbf{Role Name} \hfill Jan 2017 - Jan 2019\\
+% Company Name \hfill \textit{San Francisco, CA}
+%  \begin{itemize}
+%     \itemsep -3pt {} 
+%      \item Achieved X\% growth for XYZ using A, B, and C skills.
+%      \item Led XYZ which led to X\% of improvement in ABC
+%     \item Developed XYZ that did A, B, and C using X, Y, and Z. 
+%  \end{itemize}
 
-% %-----------Publications-----------
-% \section{Publications}
-% \resumeSubHeadingListStart
-%       \resumeProjectHeading
-%            {\textbf{\href{https://www.igi-global.com/chapter/mental-health-and-well-being-productsapps-and-their-challenges/322639}{Mental Health and Well-Being Products/Apps and Their Challenges}}}{}
-%           \resumeItemListStart
-%           \resumeItem{Sooradas, Saubhagya et al. (2023). “Mental Health and Well-Being Products/Apps and Their Challenges”. In:
-% Community Mental Health and Well-Being in the New Normal. IGI Global, pp. 141–167.}
-%           \resumeItemListEnd
-%           % \resumeProjectHeading
-%            % {\textbf{\href{https://link.springer.com/book/9789819729371}{Machine Learning for Intelligent Healthcare Across Decentralized Patient Databases using Federated Learning}}}{}
-%           % \resumeItemListStart
-%           % \resumeItem{Sooradas, Saubhagya et al. (2023). “Mental Health and Well-Being Products/Apps and Their Challenges”. In: Community Mental Health and Well-Being in the New Normal. IGI Global, pp. 141–167.}
-%           % \resumeItemListEnd
-%     \resumeSubHeadingListEnd
+\end{rSection} 
 
-% %-------------------------------------------
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 
-%-----------Extracurricular Activities-----------
-\section{Leadership and Extracurricular Activities}
-\resumeSubHeadingListStart
-      \resumeProjectHeading
-           {\textbf{Chairperson} $|$ \emph{VIT Model United Nations Society}}{March 2023 -- January 2024}
-           \resumeItemListStart
-                \resumeItem{Organising Committee member for the events Spotlight 2.0, Policython 2023, Novus Epoch attracting over a combined total of 1000 attendees, and managed logistics for the event}
-                \resumeItem{Developed and executed comprehensive PR and outreach campaigns to increase awareness on key social issues, reaching an audience of over 2000 people.}
-            \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Events Head} $|$ \emph{DBQC - The VIT Quiz Club}}{January 2022 -- December 2023}
-          \resumeItemListStart
-                \resumeItem{Managed all aspects of The Grand Gravitas Quiz Fest 2022, The Riviera Quiz Fest 2023, and The Grand Gravitas Quiz Fest 2023, resulting in over 500 participants. Planned and executed monthly Quiz of The Month events in 2022 with an average of 40 participants per event, and increased Instagram engagement by 15\% through weekly facts and mini-quizzes.}
-                \resumeItem{Planned and executed the highly anticipated 2022 Summer of Quiz on Instagram, featuring engaging questions for 50 consecutive days and reaching over 2500 people.}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\begin{rSection}{PROJECTS}
+    \textbf{Stock Market Application} \hfill Dec 2025
+        \begin{itemize}
+            \item Developed a paper trading application in Python and MySQL to simulate a stock market trading application where users can practice trades without the involvement of money or actual securities.
+        \end{itemize}
+    \textbf{Dataset Augmentation Using GANs} \hfill Oct 2025
+    \begin{itemize}
+        \item Developed an implementation of a Generative Adversarial Network (GAN) which uses a generator and discriminator to create synthetic data for a sample minority class.
+    \end{itemize}
+
+% \href{https://hiring-search.careerflow.ai/}{(Try it here)}}
+% \item \textbf{Short Project Title.} {Build a project that does something and had quantified success using A, B, and C. This project's description spans two lines and also won an award.}
+% \item \textbf{Short Project Title.} {Build a project that does something and had quantified success using A, B, and C. This project's description spans two lines and also won an award.}
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+% \begin{rSection}{Publications} 
+
+% \begin{itemize}
+%         \item Agarwal, S., Khedkar, S., Subramanian, S., \& Tripathy, B. K. (2025). Machine Learning for Intelligent Healthcare Across Decentralized Patient Databases Using Federated Learning. In Role of Artificial Intelligence, Telehealth, and Telemedicine in Medical Virology (pp. 179-197). Singapore: Springer Nature Singapore.
+% \end{itemize}
+
+% \end{rSection}
+%----------------------------------------------------------------------------------------
+% \begin{rSection}{Extra-Curricular Activities} 
+% \begin{itemize}
+%     \item 	Actively write \href{https://www.faangpath.com/blog/}{blog posts} and social media posts (\href{https://www.tiktok.com/@faangpath}{TikTok}, \href{https://www.instagram.com/faangpath/?hl=en}{Instagram}) viewed by over 20K+ job seekers per week to help people with best practices to land their dream jobs. 
+%     \item	Sample bullet point.
+% \end{itemize}
+
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Leadership} 
+\begin{itemize}
+    \item Events Head for DBQC – The VIT Quiz Club for the year 2022-2023
+    \item Chairperson for VIT Model United Nations Society for the year 2023-2024
+\end{itemize}
+
+
+\end{rSection}
+
 
 \end{document}
-
-%
